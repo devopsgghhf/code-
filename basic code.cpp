@@ -72,3 +72,79 @@ int main(){
 	return 0;
 }
 	
+reference variables and typecasting 
+ #include<iostream>
+using namespace std;
+int c=45;
+
+int main(){
+	**********Built in datatypes**************
+	int a,b,c;
+	cout<<"enter the value of a:-"<<endl;
+	cin>>a;
+	cout<<"enter the value of b:-"<<endl;
+	cin>>b;
+	c=a+b;
+	cout<<"sum of a+b is:-"<<c;
+	cout<<"the value of global c is:-"<<::c;
+	
+	**********Float ,double and long double literals*****************
+	float d=3.45f;
+	long double e=3.45l;
+	cout<<"value of d is:- "<<d<<endl<<"value of e is:- "<<e<<endl;
+	cout<<"the size of 3.45 is:- "<<sizeof(3.45)<<endl;
+	cout<<"the size of 3.45 is:- "<<sizeof(3.45f)<<endl;
+	cout<<"the size of 3.45 is:- "<<sizeof(3.45l)<<endl;
+	cout<<"the size of 3.45 is:- "<<sizeof(3.45F)<<endl;
+	cout<<"the size of 3.45 is:- "<<sizeof(3.45L)<<endl;*/
+	
+	********************Reference variables*****************************
+	vishwajeet---------->vishwa--------->vishu-------->coder
+	int x=9;
+	int & y=x;
+	cout<<x<<endl;
+	cout<<y<<endl;*/
+	
+	-------------------------typecasting-----------------------------------
+	int a=45;
+	float b=45.5;
+	cout<<"the value of a is:-"<<(float)a<<endl;
+	cout<<"the value of a is:-"<<float(a)<<endl;
+	cout<<"the value of b is:-"<<(int)b<<endl;
+	cout<<"the value of b is:-"<<int(b)<<endl;
+	int c= int(b);
+    cout<<"the expression is "<<a + b<<endl;
+	cout<<"the expression is "<<a +int(b)<<endl;
+	cout<<"the expression is "<<a +(int)b<<endl;  
+	return 0;
+}
+
+constants,manipulators & operator precedence
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+int main(){
+	******************constants*******************
+	const float a=45.67;
+	cout<<"value of a is "<<a<<endl;
+	a=45.67;//you will get an error bcz a is a constant
+	cout<<"value of a is "<<a;
+	
+	********************manipulators********************
+	int a=3,b=4,c=5;
+	cout<<"the value of a is:"<<setw(4)<<a<<endl;
+	cout<<"the value of b is:"<<setw(4)<<b<<endl;
+	cout<<"the value of c is:"<<setw(4)<<c<<endl;
+	
+	cout<<"the value of a is:"<<a<<endl;
+	cout<<"the value of b is:"<<b<<endl;
+	cout<<"the value of c is:"<<c<<endl; */
+	
+	********************operator precedence*************
+    int a=3,b=4;
+    int c=((((a*5)+b)-45)+87);
+    cout<<c;
+	return 0;
+	
+}
