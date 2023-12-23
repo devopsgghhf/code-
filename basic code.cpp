@@ -6,8 +6,8 @@ int main(){
 	cout<<"hello world";
 	return 0;
 }
-#include<iostream>
 //comments and variables 
+#include<iostream>
 using namespace std;
 
 int main(){
@@ -38,7 +38,6 @@ int main(){
 
 //operators :- arithmetic,assingment,comparison,logical
 #include<iostream>
-
 using namespace std;
 int main(){
 	int a=4, b=5;
@@ -72,7 +71,7 @@ int main(){
 	return 0;
 }
 	
-reference variables and typecasting 
+//reference variables and typecasting 
  #include<iostream>
 using namespace std;
 int c=45;
@@ -119,13 +118,12 @@ int main(){
 	return 0;
 }
 
-constants,manipulators & operator precedence
+//constants,manipulators & operator precedence
 #include<iostream>
 #include<iomanip>
-
 using namespace std;
 int main(){
-	******************constants*******************
+	**********constants******
 	const float a=45.67;
 	cout<<"value of a is "<<a<<endl;
 	a=45.67;//you will get an error bcz a is a constant
