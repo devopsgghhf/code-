@@ -1,1 +1,45 @@
+//control statements
+//if,else if,else
+#include<iostream>
+using namespace std;
+int main(){
+	int age;
+	cout<<"tell me your age"<<endl;
+	cin>>age;
+	if(age<18){
+		cout<<"you can not come in party"<<endl;
+	}
+	else if(age==18){
+		cout<<"you can come in party"<<endl;
+	}
+	else{
+		cout<<"you can come in party"<<endl;
+	}
+	return 0;
+	
+}
 
+***switch case***
+#include<iostream>
+using namespace std;
+int main(){
+	int age;
+	cout<<"enter your age"<<endl;
+	cin>>age;
+	switch(age)
+	{
+		case 17:
+			cout<<"you are 17"<<endl;
+			break;
+		case 18:
+		    cout<<"you are 18"<<endl;
+			break;
+		case 19:
+		    cout<<"you are 19"<<endl;
+			break;
+		default:
+		cout<<"no special cases"<<endl;
+		break;			
+	}
+	cout<<"done with swtich case"<<endl;
+}
