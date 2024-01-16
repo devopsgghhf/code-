@@ -145,4 +145,50 @@ int main(){
     cout<<c;
 	return 0;
 
-	
+	//structure:- stored group of variables at one place . contain different datatype
+#include<iostream>
+using namespace std;
+struct employee//structure declaration
+{
+    /* data */
+    int id;
+    char favchar;
+    float salary;
+};
+
+int main(){
+    struct employee vishwa; //varibale name 
+    vishwa.id=1;        //assign the value
+    vishwa.favchar='v';
+    vishwa.salary=12345678;
+    cout<<"the value "<<vishwa.salary<<endl;      //print
+    cout<<"the value"<<vishwa.id<<endl;
+    cout<<"the value"<<vishwa.favchar<<endl;
+    return 0;
+}
+
+//union
+#include<iostream>
+using namespace std;
+union money
+{
+    /* data */
+    int rice;
+    char car;
+    float dollar;
+};
+int main(){
+    union money m1;
+    m1.rice=34;
+    m1.car='c';
+    cout<<m1.car;
+}
+//enum 
+#include<iostream>
+using namespace std;
+int main(){
+    enum meal{breakfast,fast,dinner};
+    cout<<breakfast;
+    cout<<fast;
+    cout<<dinner;
+}
