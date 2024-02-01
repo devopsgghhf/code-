@@ -192,3 +192,42 @@ int main(){
     cout<<fast;
     cout<<dinner;
 }
+//************string************
+#include<iostream>
+using namespace std;
+int main()
+{
+    //string 
+    string greating="hello";
+    //concatenation 
+    string fname="vishwajeet";
+    string lname="khandare";
+    string fullnamep=fname+" "+lname;
+    cout<<fullnamep<<endl;
+    //append
+    string fullname=fname.append(lname);
+    cout<<fullname<<endl;
+    //adding no and strings:
+    int a=10;
+    int b=20;
+    int c=a+b;
+    cout<<c<<endl;
+    string x="10";
+    string y="20";
+    string z=x+y;
+    cout<<z<<endl;
+    //length of string 
+    string txt="qwertyuioplkjhgfdsazxcvbnm";
+    cout<<"the length of the text is="<<txt.length()<<endl;
+    //access the string :
+    string sub="cpp";
+    cout<<sub[2]<<endl;
+    sub[1]='v';
+    cout<<sub<<endl;
+    //user input strings
+    string fstname;
+    cout<<"type ypur name="<<endl;
+    cin>>fstname;
+    cout<<"your name is="<<fstname<<endl;
+   return 0;
+}                       
